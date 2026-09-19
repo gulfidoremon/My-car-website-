@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #080B10;
+    --bg-secondary: #11161E;
+    --bg-card: #171D27;
+    --gold: #F5B82E;
+    --gold-hover: #E5A81E;
+    --gold-glow: rgba(245, 184, 46, 0.25);
+  }
+
+  body {
+    background-color: #080B10;
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Gold Gradient & Glow utility classes */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDE68A 0%, #F5B82E 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(245, 184, 46, 0.28);
+}
+
+.bg-gold-subtle {
+  background-color: rgba(245, 184, 46, 0.08);
+}
+
+.gold-glow-shadow {
+  box-shadow: 0 0 25px rgba(245, 184, 46, 0.22);
+}
+
+.gold-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 184, 46, 0.45);
+  box-shadow: 0 12px 30px -10px rgba(245, 184, 46, 0.15);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080B10;
+}
+::-webkit-scrollbar-thumb {
+  background: #252e3d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5B82E;
+}
+

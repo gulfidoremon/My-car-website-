@@ -1,0 +1,6 @@
+{
+  "name": "India Car Rental",
+  "description": "Premium self-drive and chauffeur car rental platform in India. Transparent rates, top-tier sanitized fleet, instant WhatsApp booking and 24/7 roadside assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
